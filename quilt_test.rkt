@@ -1,0 +1,6 @@
+(require (lib "fungraph.ss" "concabs"))
+(load "/Users/Roberto/Dropbox/Code/Scheme/quilting.scm")
+(define half-turn (lambda (square) (quarter-turn-right (quarter-turn-right square))))
+(define quarter-turn-left (lambda (square) (quarter-turn-right (half-turn square))))
+(define side-by-side (lambda (square1 square2) (quarter-turn-right (stack (quarter-turn-left square2) (quarter-turn-left square1)))))
+(define pinwheel (lambda (square) (stack (side-by-side (quarter-turn-right square) (half-turn square)) (side-by-side square (quarter-turn-left square)))))
