@@ -1,4 +1,4 @@
-; Concrete Abstractions (Hailperin, Keiser, Knight), 1999
+; Concrete Abstractions (Hailperin, Kaiser, Knight), 1999
 ;
 ; Chapter 2
 ;
