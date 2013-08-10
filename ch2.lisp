@@ -145,3 +145,8 @@
 		  ((< n 10) n)
 		  (t (setf *current-digit* (mod n 10))
 		  	 (+ *current-digit* (sum-digits (/ (- n *current-digit*) 10))))))
+
+; Exercise 2.12
+(defun find-exp-2 (n)
+	(cond ((oddp n) 0)
+		  (t (1+ (find-exp-2 (/ n 2))))))
